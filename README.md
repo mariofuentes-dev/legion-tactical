@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+﻿# Legion Tactical
 
-# Run and deploy your AI Studio app
+Landing page y plataforma web para Legion Tactical (simulaciÃ³n de airsoft y entrenamiento tÃ¡ctico).
 
-This contains everything you need to run your app locally.
+## TecnologÃ­as Utilizadas
 
-View your app in AI Studio: https://ai.studio/apps/d289fcfc-3954-4822-9201-7300b37644d5
+- **React**
+- **Vite** (Entorno de desarrollo rÃ¡pido)
+- **Tailwind CSS** (Estilos)
+- **TypeScript**
 
-## Run Locally
+## GuÃ­a de InstalaciÃ³n Local
 
-**Prerequisites:**  Node.js
+Para ejecutar el proyecto en tu ordenador necesitas tener instalado [Node.js](https://nodejs.org/).
 
+1. **Clonar el repositorio y entrar en la carpeta:**
+   `ash
+   git clone https://github.com/mariofuentes-dev/legion-tactical.git
+   cd legion-tactical
+   `
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. **Instalar todas las dependencias necesarias:**
+   `ash
+   npm install
+   `
+
+3. **Iniciar el servidor de pruebas:**
+   `ash
+   npm run dev
+   `
+   *La consola te indicarÃ¡ una direcciÃ³n local (por ejemplo, http://localhost:3000) para ver la web desde tu navegador.*
+
+## Generar versiÃ³n para ProducciÃ³n (Hosting)
+
+Para publicar la web de forma oficial en cualquier servidor (cPanel, Hostinger, Vercel, etc.), no debes subir el cÃ³digo fuente tal cual. Hay que compilarlo:
+
+1. Ejecuta el siguiente comando:
+   `ash
+   npm run build
+   `
+2. Esto crearÃ¡ automÃ¡ticamente una carpeta llamada **dist**.
+3. Coge **Ãºnicamente los archivos que estÃ¡n dentro de dist** y sÃºbelos a tu hosting (en la carpeta public_html, www o equivalente).
