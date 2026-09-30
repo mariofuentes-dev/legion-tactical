@@ -1,42 +1,42 @@
-﻿# Legion Tactical
+# Legion Tactical
 
-Landing page y plataforma web para Legion Tactical (simulaciÃ³n de airsoft y entrenamiento tÃ¡ctico).
+Landing page y plataforma web para Legion Tactical (simulación de airsoft y entrenamiento táctico).
 
-## TecnologÃ­as Utilizadas
+## Tecnologías Utilizadas
 
 - **React**
-- **Vite** (Entorno de desarrollo rÃ¡pido)
+- **Vite** (Entorno de desarrollo rápido)
 - **Tailwind CSS** (Estilos)
 - **TypeScript**
 
-## GuÃ­a de InstalaciÃ³n Local
+## Guía de Instalación Local
 
 Para ejecutar el proyecto en tu ordenador necesitas tener instalado [Node.js](https://nodejs.org/).
 
 1. **Clonar el repositorio y entrar en la carpeta:**
-   `ash
+   ```bash
    git clone https://github.com/mariofuentes-dev/legion-tactical.git
    cd legion-tactical
-   `
+   ```
 
 2. **Instalar todas las dependencias necesarias:**
-   `ash
+   ```bash
    npm install
-   `
+   ```
 
 3. **Iniciar el servidor de pruebas:**
-   `ash
+   ```bash
    npm run dev
-   `
-   *La consola te indicarÃ¡ una direcciÃ³n local (por ejemplo, http://localhost:3000) para ver la web desde tu navegador.*
+   ```
+   *La consola te indicará una dirección local (por ejemplo, http://localhost:3000) para ver la web desde tu navegador.*
 
-## Generar versiÃ³n para ProducciÃ³n (Hosting)
+## Generar versión para Producción (Hosting)
 
-Para publicar la web de forma oficial en cualquier servidor (cPanel, Hostinger, Vercel, etc.), no debes subir el cÃ³digo fuente tal cual. Hay que compilarlo:
+Para publicar la web de forma oficial en cualquier servidor (cPanel, Hostinger, Vercel, etc.), no debes subir el código fuente tal cual. Hay que compilarlo:
 
 1. Ejecuta el siguiente comando:
-   `ash
+   ```bash
    npm run build
-   `
-2. Esto crearÃ¡ automÃ¡ticamente una carpeta llamada **dist**.
-3. Coge **Ãºnicamente los archivos que estÃ¡n dentro de dist** y sÃºbelos a tu hosting (en la carpeta public_html, www o equivalente).
+   ```
+2. Esto creará automáticamente una carpeta llamada **dist**.
+3. Coge **únicamente los archivos que están dentro de dist** y súbelos a tu hosting (en la carpeta public_html, www o equivalente).
